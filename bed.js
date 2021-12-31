@@ -28,10 +28,10 @@ function draw(){
 document.getElementById("status2").innerHTML = "Status: Object Detected";
 fill("#FF0000");
 percent = floor(objects[i].confidence * 100);
-text(objects[i].label + " " + percent + "%", objects[i].x + 10, objects[i].y + 10);
+text(objects[i].label + " " + percent + "%", objects[i].x - 300, objects[i].y - 400);
 noFill();
 stroke("#FF0000");
-rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height)
+rect(objects[i].x - 300, objects[i].y - 400, objects[i].width, objects[i].height)
         }
     }
 }
